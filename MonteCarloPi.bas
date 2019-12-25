@@ -1,13 +1,6 @@
 Attribute VB_Name = "MonteCarloPi"
 Option Explicit
 
-Public Function RandomNumber() As Double
-
-    Randomize
-    
-    RandomNumber = Rnd
-
-End Function
 
 
 Public Function calculatePi(n As Long) As Double
@@ -15,8 +8,6 @@ Public Function calculatePi(n As Long) As Double
     Dim x As Double, y As Double
     Dim i As Long, inside As Long
     c = 0
-                
-    Randomize
     
     For i = 1 To n
         x = Rnd
