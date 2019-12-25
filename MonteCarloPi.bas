@@ -13,7 +13,7 @@ End Function
 Public Function calculatePi(n As Long) As Double
 
     Dim x As Double, y As Double
-    Dim i As Long, c As Long
+    Dim i As Long, inside As Long
     c = 0
                 
     Randomize
@@ -22,10 +22,10 @@ Public Function calculatePi(n As Long) As Double
         x = Rnd
         y = Rnd
         If (x ^ 2 + y ^ 2 <= 1#) Then
-            c = c + 1
+            inside = inside + 1
         End If
     Next
     
-    calculatePi = 4# * c / n
+    calculatePi = 4# * inside / n
 
 End Function
